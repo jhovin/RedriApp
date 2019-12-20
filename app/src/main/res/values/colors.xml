@@ -35,6 +35,8 @@
     <color name="colorAzul">#0a3782</color>
     <color name="colorGris">#617e8d</color>
     <color name="colorNegro">#000000</color>
+    <color name="colorPlomo">#867A7A</color>
+    <color name="colorPlata">#8A9597</color>
 
     <color name="light_gray_line">#ededed</color>
 </resources>
