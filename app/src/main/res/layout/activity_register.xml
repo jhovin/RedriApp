@@ -46,7 +46,7 @@
                 >
 
                 <EditText
-                    android:id="@+id/fullname_input"
+                    android:id="@+id/supervisor_input"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Supervisor"
@@ -63,7 +63,7 @@
                 android:layout_alignLeft="@+id/center_view">
 
                 <EditText
-                    android:id="@+id/email_input"
+                    android:id="@+id/dnil_input"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="number"
@@ -90,7 +90,7 @@
                 android:layout_alignEnd="@+id/center_view">
 
                 <EditText
-                    android:id="@+id/password_input"
+                    android:id="@+id/ubicacion_input"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="text"
@@ -107,9 +107,11 @@
                 android:layout_alignLeft="@+id/center_view">
 
                 <EditText
+                    android:id="@+id/codigo_input"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="text"
+                    android:maxLength="20"
                     android:hint="Código"></EditText>
 
             </android.support.design.widget.TextInputLayout>
@@ -123,7 +125,7 @@
                 android:layout_alignEnd="@+id/center_view">
 
                 <EditText
-
+                    android:id="@+id/tecnico1_input"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="text"
@@ -140,6 +142,7 @@
                 android:layout_alignLeft="@+id/center_view">
 
                 <EditText
+                    android:id="@+id/dnitec1_input"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="number"
@@ -157,7 +160,7 @@
                 android:layout_alignEnd="@+id/center_view">
 
                 <EditText
-
+                    android:id="@+id/tecnico2_input"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="text"
@@ -174,6 +177,7 @@
                 android:layout_alignLeft="@+id/center_view">
 
                 <EditText
+                    android:id="@+id/dnitec2_input"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="number"

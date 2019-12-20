@@ -14,12 +14,14 @@ import com.pasantias.redriapp.repositories.UserRepository;
 
 public class RegisterActivity extends AppCompatActivity {
 
-    private EditText fullnameInput;
-
-    private EditText emailInput;
-
-    private EditText passwordInput;
-
+    private EditText supervisorInput;
+    private EditText dni1Input;
+    private EditText ubicacionInput;
+    private EditText codigoInput;
+    private EditText tecnico1Input;
+    private EditText tecnico2Input;
+    private EditText dnitec1Input;
+    private EditText dnitec2Input;
     private Button saveButton;
 
     @Override
@@ -27,9 +29,14 @@ public class RegisterActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
 
-        fullnameInput = findViewById(R.id.fullname_input);
-        emailInput = findViewById(R.id.email_input);
-        passwordInput = findViewById(R.id.password_input);
+        supervisorInput = findViewById(R.id.supervisor_input);
+        dni1Input = findViewById(R.id.dnil_input);
+        ubicacionInput = findViewById(R.id.ubicacion_input);
+        codigoInput=findViewById(R.id.codigo_input);
+        tecnico1Input=findViewById(R.id.tecnico1_input);
+        tecnico2Input=findViewById(R.id.tecnico2_input);
+        dnitec1Input=findViewById(R.id.dnitec1_input);
+        dnitec2Input=findViewById(R.id.dnitec2_input);
         saveButton = findViewById(R.id.save_button);
         saveButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -40,16 +47,28 @@ public class RegisterActivity extends AppCompatActivity {
     }
 
     private void save() {
-        String fullname = fullnameInput.getText().toString();
-        String email = emailInput.getText().toString();
-        String password = passwordInput.getText().toString();
+
+        String fullname =supervisorInput.getText().toString();
+        String email =dni1Input.getText().toString();
+        String password = ubicacionInput.getText().toString();
+        String cod=codigoInput.getText().toString();
+        String tec1=tecnico1Input.getText().toString();
+        String tec2=tecnico2Input.getText().toString();
+        String dni_tec1=dnitec1Input.getText().toString();
+        String dni_tec2=dnitec2Input.getText().toString();
 
         User user = new User();
         user.setFullname(fullname);
         user.setEmail(email);
         user.setPassword(password);
+        user.setCodigo(cod);
+        user.setTecnico1(tec1);
+        user.setTecnico2(tec2);
+        user.setDnitec1(dni_tec1);
+        user.setDnitec2(dni_tec2);
 
-        if (fullname.isEmpty()||email.isEmpty()||password.isEmpty()){
+        if (fullname.isEmpty()||email.isEmpty()||password.isEmpty()||cod.isEmpty()||
+                tec1.isEmpty()||dni_tec1.isEmpty()){
             Toast.makeText(this, "Ingrese todos los campos!", Toast.LENGTH_SHORT).show();
             return;
         } else {

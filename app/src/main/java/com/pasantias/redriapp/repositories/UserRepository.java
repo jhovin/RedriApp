@@ -19,12 +19,6 @@ public class UserRepository {
     public static void save(User user){
         SugarRecord.save(user);
     }
-    public static void update(String fullname,String email,String password,Long id){
-        User user =SugarRecord.findById(User.class,id);
-        user.setFullname(fullname);
-        user.setEmail(email);
-        user.setPassword(password);
-    }
     public static void delete(Long id){
         User user=SugarRecord.findById(User.class,id);
         SugarRecord.delete(user);
