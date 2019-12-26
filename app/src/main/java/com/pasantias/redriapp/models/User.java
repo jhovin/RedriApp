@@ -20,6 +20,7 @@ public class User {
     private String modelo;
 
 
+
     public User() {
     }
 
@@ -30,7 +31,6 @@ public class User {
         this.codigo = codigo;
         this.tecnico1 = tecnico1;
         this.tecnico2 = tecnico2;
-
         this.dnitec1 = dnitec1;
         this.dnitec2 = dnitec2;
         this.maquina = maquina;
