@@ -195,7 +195,7 @@
                 android:layout_alignEnd="@+id/center_view">
 
                 <EditText
-
+                    android:id="@+id/fech_inicio"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="text"
@@ -212,11 +212,11 @@
                 android:layout_alignLeft="@+id/center_view">
 
                 <EditText
-
+                    android:id="@+id/fech_termino"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="text"
-                    android:hint="Fecha de fin"></EditText>
+                    android:hint="Fecha de termino"></EditText>
 
             </android.support.design.widget.TextInputLayout>
 
@@ -263,6 +263,7 @@
                 >
 
                 <EditText
+                    android:id="@+id/maquina_input"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Maquina"
@@ -280,7 +281,7 @@
                 android:layout_alignEnd="@+id/center_view">
 
                 <EditText
-
+                    android:id="@+id/modelo_input"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="text"
@@ -297,7 +298,7 @@
                 android:layout_alignLeft="@+id/center_view">
 
                 <EditText
-
+                    android:id="@+id/serie_input"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="text"

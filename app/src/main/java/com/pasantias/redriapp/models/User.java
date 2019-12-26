@@ -2,36 +2,40 @@ package com.pasantias.redriapp.models;
 
 import com.orm.dsl.Table;
 
-import java.util.Date;
 
 @Table
 public class User {
 
     private Long id;
-    private String fullname;
-    private String email;
-    private String password;
+    private String supervisor;
+    private String dnisupervisor;
+    private String ubicacion;
     private String codigo;
     private String tecnico1;
     private String tecnico2;
     private String dnitec1;
     private String dnitec2;
-
-
+    private String maquina;
+    private String serie;
+    private String modelo;
 
 
     public User() {
     }
 
-    public User(String fullname, String email, String password, String codigo, String tecnico1, String tecnico2, String dnitec1, String dnitec2) {
-        this.fullname = fullname;
-        this.email = email;
-        this.password = password;
+    public User(String supervisor, String dnisupervisor, String ubicacion, String codigo, String tecnico1, String tecnico2, String dnitec1, String dnitec2, String maquina, String serie, String modelo) {
+        this.supervisor = supervisor;
+        this.dnisupervisor = dnisupervisor;
+        this.ubicacion = ubicacion;
         this.codigo = codigo;
         this.tecnico1 = tecnico1;
         this.tecnico2 = tecnico2;
+
         this.dnitec1 = dnitec1;
         this.dnitec2 = dnitec2;
+        this.maquina = maquina;
+        this.serie = serie;
+        this.modelo = modelo;
     }
 
     public Long getId() {
@@ -42,28 +46,28 @@ public class User {
         this.id = id;
     }
 
-    public String getFullname() {
-        return fullname;
+    public String getSupervisor() {
+        return supervisor;
     }
 
-    public void setFullname(String fullname) {
-        this.fullname = fullname;
+    public void setSupervisor(String supervisor) {
+        this.supervisor = supervisor;
     }
 
-    public String getEmail() {
-        return email;
+    public String getDnisupervisor() {
+        return dnisupervisor;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setDnisupervisor(String dnisupervisor) {
+        this.dnisupervisor = dnisupervisor;
     }
 
-    public String getPassword() {
-        return password;
+    public String getUbicacion() {
+        return ubicacion;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
+    public void setUbicacion(String ubicacion) {
+        this.ubicacion = ubicacion;
     }
 
     public String getCodigo() {
@@ -106,18 +110,45 @@ public class User {
         this.dnitec2 = dnitec2;
     }
 
+    public String getMaquina() {
+        return maquina;
+    }
+
+    public void setMaquina(String maquina) {
+        this.maquina = maquina;
+    }
+
+    public String getSerie() {
+        return serie;
+    }
+
+    public void setSerie(String serie) {
+        this.serie = serie;
+    }
+
+    public String getModelo() {
+        return modelo;
+    }
+
+    public void setModelo(String modelo) {
+        this.modelo = modelo;
+    }
+
     @Override
     public String toString() {
         return "User{" +
                 "id=" + id +
-                ", fullname='" + fullname + '\'' +
-                ", email='" + email + '\'' +
-                ", password='" + password + '\'' +
+                ", supervisor='" + supervisor + '\'' +
+                ", dnisupervisor='" + dnisupervisor + '\'' +
+                ", ubicacion='" + ubicacion + '\'' +
                 ", codigo='" + codigo + '\'' +
                 ", tecnico1='" + tecnico1 + '\'' +
                 ", tecnico2='" + tecnico2 + '\'' +
                 ", dnitec1='" + dnitec1 + '\'' +
                 ", dnitec2='" + dnitec2 + '\'' +
+                ", maquina='" + maquina + '\'' +
+                ", serie='" + serie + '\'' +
+                ", modelo='" + modelo + '\'' +
                 '}';
     }
 }

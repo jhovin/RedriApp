@@ -39,8 +39,10 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder> {
     public void onBindViewHolder(@NonNull ViewHolder viewHolder,  final int position) {
        final User user = this.users.get(position);
 
-        viewHolder.fullnameText.setText(user.getFullname());
-        viewHolder.emailText.setText(user.getEmail());
+        viewHolder.fullnameText.setText(user.getSupervisor());
+        viewHolder.emailText.setText(user.getDnisupervisor());
+        viewHolder.tecnico1Text.setText(user.getTecnico1());
+        viewHolder.maquinaText.setText(user.getMaquina());
         viewHolder.button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -63,10 +65,10 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder> {
     public class ViewHolder extends RecyclerView.ViewHolder {
 
         ImageView pictureImage;
-
         TextView fullnameText;
-
         TextView emailText;
+        TextView tecnico1Text;
+        TextView maquinaText;
 
         ImageButton button;
 
@@ -76,6 +78,9 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder> {
             pictureImage = itemView.findViewById(R.id.picture_image);
             fullnameText = itemView.findViewById(R.id.fullname_text);
             emailText = itemView.findViewById(R.id.email_text);
+            tecnico1Text=itemView.findViewById(R.id.tecnico1_text);
+            maquinaText=itemView.findViewById(R.id.maquina_text);
+
             button = (ImageButton) itemView.findViewById(R.id.delete_button);
         }
     }
