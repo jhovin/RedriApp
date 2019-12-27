@@ -88,10 +88,24 @@ public class RegisterActivity extends AppCompatActivity {
                 tec1.isEmpty()||dni_tec1.isEmpty()||maquina.isEmpty()||modelo.isEmpty()||serie.isEmpty()){
             Toast.makeText(this, "Ingrese todos los campos!", Toast.LENGTH_SHORT).show();
             return;
-        } else {
+        }if (supervisor.isEmpty()){
+            Toast.makeText(this,"El campo de Supervisor es necesario",Toast.LENGTH_SHORT).show();
+            return;
+        }if (dnisupervisor.isEmpty()){
+            Toast.makeText(this,"Es necesario colocar el DNI del Supervisor",Toast.LENGTH_SHORT).show();
+            return;
+        }if (tec1.isEmpty()){
+            Toast.makeText(this,"Es necesario colocar como mínimo un Tecnico",Toast.LENGTH_SHORT).show();
+            return;
+        }if (dni_tec1.isEmpty()){
+            Toast.makeText(this,"Es necesario colocar un DNI como mínimo ",Toast.LENGTH_SHORT).show();
+            return;
+
+        }else {
             UserRepository.save(user);
             Toast.makeText(this, "Usuario registrado con exito!", Toast.LENGTH_SHORT).show();
         }
+
         Intent intent=new Intent(this,DuracionActivity.class);
         startActivity(intent);
         setResult(RESULT_OK);

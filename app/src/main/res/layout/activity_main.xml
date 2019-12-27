@@ -86,10 +86,6 @@
             android:layout_alignParentEnd="true"
             android:layout_alignStart="@id/center_view"
             android:layout_alignEnd="@id/center_view">
-
         </ImageView>
-
-
     </RelativeLayout>
-
 </RelativeLayout>
