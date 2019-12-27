@@ -424,9 +424,6 @@
                     android:maxLength="8">
                 </EditText>
             </android.support.design.widget.TextInputLayout>
-
-            //Hola
-
             <android.support.design.widget.TextInputLayout
                 android:layout_below="@+id/inputEspecifica2"
                 android:id="@+id/textTotalHoras"
