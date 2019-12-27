@@ -198,7 +198,8 @@
                     android:id="@+id/fech_inicio"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="text"
+                    android:inputType="date"
+                    android:maxLength="10"
                     android:hint="Fecha de inicio"></EditText>
 
             </android.support.design.widget.TextInputLayout>
@@ -212,10 +213,11 @@
                 android:layout_alignLeft="@+id/center_view">
 
                 <EditText
-                    android:id="@+id/fech_termino"
+                    android:id="@+id/fech_fin"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="text"
+                    android:inputType="date"
+                    android:maxLength="10"
                     android:hint="Fecha de termino"></EditText>
 
             </android.support.design.widget.TextInputLayout>
@@ -229,10 +231,11 @@
                 android:layout_alignEnd="@+id/center_view">
 
                 <EditText
-
+                    android:id="@+id/horainicio_input"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="text"
+                    android:inputType="time"
+                    android:maxLength="8"
                     android:hint="Hora de inicio"></EditText>
 
             </android.support.design.widget.TextInputLayout>
@@ -246,10 +249,11 @@
                 android:layout_alignLeft="@+id/center_view">
 
                 <EditText
-
+                    android:id="@+id/horafin_input"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="text"
+                    android:inputType="time"
+                    android:maxLength="8"
                     android:hint="Hora de fin"></EditText>
 
             </android.support.design.widget.TextInputLayout>

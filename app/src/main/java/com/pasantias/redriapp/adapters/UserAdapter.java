@@ -39,10 +39,12 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder> {
     public void onBindViewHolder(@NonNull ViewHolder viewHolder,  final int position) {
        final User user = this.users.get(position);
 
-        viewHolder.fullnameText.setText(user.getSupervisor());
-        viewHolder.emailText.setText(user.getDnisupervisor());
+        viewHolder.supervisorText.setText(user.getSupervisor());
+        viewHolder.dnisupervisorText.setText(user.getDnisupervisor());
         viewHolder.tecnico1Text.setText(user.getTecnico1());
         viewHolder.maquinaText.setText(user.getMaquina());
+        viewHolder.modeloText.setText(user.getModelo());
+        viewHolder.serieText.setText(user.getSerie());
         viewHolder.button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -65,10 +67,12 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder> {
     public class ViewHolder extends RecyclerView.ViewHolder {
 
         ImageView pictureImage;
-        TextView fullnameText;
-        TextView emailText;
+        TextView supervisorText;
+        TextView dnisupervisorText;
         TextView tecnico1Text;
         TextView maquinaText;
+        TextView modeloText;
+        TextView serieText;
 
         ImageButton button;
 
@@ -76,10 +80,12 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder> {
             super(itemView);
 
             pictureImage = itemView.findViewById(R.id.picture_image);
-            fullnameText = itemView.findViewById(R.id.fullname_text);
-            emailText = itemView.findViewById(R.id.email_text);
+            supervisorText = itemView.findViewById(R.id.supervisor_text);
+            dnisupervisorText = itemView.findViewById(R.id.dnisupervisor_text);
             tecnico1Text=itemView.findViewById(R.id.tecnico1_text);
             maquinaText=itemView.findViewById(R.id.maquina_text);
+            modeloText=itemView.findViewById(R.id.modelo_text);
+            serieText=itemView.findViewById(R.id.serie_text);
 
             button = (ImageButton) itemView.findViewById(R.id.delete_button);
         }
