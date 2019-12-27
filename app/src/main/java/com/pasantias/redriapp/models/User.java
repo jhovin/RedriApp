@@ -18,13 +18,17 @@ public class User {
     private String maquina;
     private String serie;
     private String modelo;
+    private String fechainicio;
+    private String fechafin;
+    private String horainicio;
+    private String horafin;
 
 
 
     public User() {
     }
 
-    public User(String supervisor, String dnisupervisor, String ubicacion, String codigo, String tecnico1, String tecnico2, String dnitec1, String dnitec2, String maquina, String serie, String modelo) {
+    public User(String supervisor, String dnisupervisor, String ubicacion, String codigo, String tecnico1, String tecnico2, String dnitec1, String dnitec2, String maquina, String serie, String modelo, String fechainicio, String fechafin, String horainicio, String horafin) {
         this.supervisor = supervisor;
         this.dnisupervisor = dnisupervisor;
         this.ubicacion = ubicacion;
@@ -36,6 +40,10 @@ public class User {
         this.maquina = maquina;
         this.serie = serie;
         this.modelo = modelo;
+        this.fechainicio = fechainicio;
+        this.fechafin = fechafin;
+        this.horainicio = horainicio;
+        this.horafin = horafin;
     }
 
     public Long getId() {
@@ -134,6 +142,38 @@ public class User {
         this.modelo = modelo;
     }
 
+    public String getFechainicio() {
+        return fechainicio;
+    }
+
+    public void setFechainicio(String fechainicio) {
+        this.fechainicio = fechainicio;
+    }
+
+    public String getFechafin() {
+        return fechafin;
+    }
+
+    public void setFechafin(String fechafin) {
+        this.fechafin = fechafin;
+    }
+
+    public String getHorainicio() {
+        return horainicio;
+    }
+
+    public void setHorainicio(String horainicio) {
+        this.horainicio = horainicio;
+    }
+
+    public String getHorafin() {
+        return horafin;
+    }
+
+    public void setHorafin(String horafin) {
+        this.horafin = horafin;
+    }
+
     @Override
     public String toString() {
         return "User{" +
@@ -149,6 +189,10 @@ public class User {
                 ", maquina='" + maquina + '\'' +
                 ", serie='" + serie + '\'' +
                 ", modelo='" + modelo + '\'' +
+                ", fechainicio='" + fechainicio + '\'' +
+                ", fechafin='" + fechafin + '\'' +
+                ", horainicio='" + horainicio + '\'' +
+                ", horafin='" + horafin + '\'' +
                 '}';
     }
 }

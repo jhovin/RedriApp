@@ -65,30 +65,32 @@
             <android.support.design.widget.TextInputLayout
                 android:id="@+id/textPrograhora"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="match_parent"
                 android:layout_below="@+id/textMantenimiento"
+                android:layout_margin="5dp"
                 android:layout_alignEnd="@+id/center_view">
 
                 <TextView
                     android:id="@+id/prograhora_Text"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:textSize="18sp"
                     android:text="Hora Programadas de Mantenimiento/Fabricación"></TextView>
 
             </android.support.design.widget.TextInputLayout>
 
 
             <android.support.design.widget.TextInputLayout
-                android:id="@+id/textHorasReales"
+                android:id="@+id/inputHoraprogramadas"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_below="@+id/textMantenimiento"
                 android:layout_alignLeft="@+id/center_view">
 
                 <EditText
-                    android:id="@+id/horasreales_text"
+                    android:id="@+id/horasprogramadas_input"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"></EditText>
+                    android:layout_height="45dp"></EditText>
 
             </android.support.design.widget.TextInputLayout>
 
@@ -97,21 +99,20 @@
                 android:id="@+id/inputHorasReales"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-
-                android:layout_below="@+id/textHorasReales"
+                android:layout_below="@+id/inputHoraprogramadas"
                 android:layout_alignLeft="@+id/center_view">
 
                 <EditText
                     android:id="@+id/horasreales_input"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="45dp"
                     android:inputType="time"
                     android:maxLength="8"></EditText>
 
             </android.support.design.widget.TextInputLayout>
 
             <android.support.design.widget.TextInputLayout
-                android:id="@+id/textDesmontaje"
+                android:id="@+id/textHorasreales"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/textPrograhora"
@@ -119,47 +120,115 @@
                 android:layout_margin="5dp">
 
                 <TextView
-                    android:id="@+id/desmontajetime_text"
+                    android:id="@+id/horasreales_text"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:textSize="18sp"
                     android:text="Horas Reales de Mantenimiento/Fabricación"></TextView>
 
             </android.support.design.widget.TextInputLayout>
 
 
             <android.support.design.widget.TextInputLayout
-                android:id="@+id/inputDesmontaje"
+                android:id="@+id/textDesmontaje"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/textDesmontaje"
+                android:layout_below="@+id/textHorasreales"
                 android:layout_alignEnd="@+id/center_view"
-                android:layout_margin="2dp">
+                android:layout_margin="5dp">
 
                 <TextView
-                    android:id="@+id/desmontajetime_input"
+                    android:id="@+id/desmontaje_text"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:textSize="18sp"
                     android:text="Exceso de Tiempo en Desmontaje"></TextView>
 
             </android.support.design.widget.TextInputLayout>
 
 
             <android.support.design.widget.TextInputLayout
-                android:id="@+id/textEspecifica"
+                android:id="@+id/textRepuesto"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/inputDesmontaje"
+                android:layout_below="@+id/textDesmontaje"
                 android:layout_alignEnd="@+id/center_view"
                 android:layout_margin="5dp">
 
                 <TextView
-                    android:id="@+id/especificastime_text"
+                    android:id="@+id/repuesto_text"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="text"
+                    android:textSize="18sp"
                     android:text="Tiempo de Espera de Repuesto"></TextView>
             </android.support.design.widget.TextInputLayout>
 
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inputRepuesto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/inputDesmontaje"
+                android:layout_alignLeft="@+id/center_view">
+
+                <EditText
+                    android:id="@+id/repuesto_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:inputType="time"
+                    android:maxLength="8"></EditText>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textEspecifica"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textRepuesto"
+                android:layout_margin="5dp"
+                android:layout_alignEnd="@+id/center_view">
+
+                <TextView
+                    android:id="@+id/especifica_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="Tiempo de Ordenes Específicas/Especiales"></TextView>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inputDesmontaje"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/inputHorasReales"
+                android:layout_alignLeft="@+id/center_view">
+
+                <EditText
+                    android:id="@+id/desmontaje_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:inputType="time"
+                    android:maxLength="8"></EditText>
+            </android.support.design.widget.TextInputLayout>
+
+
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inputEspecifica"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/inputRepuesto"
+                android:layout_alignLeft="@+id/center_view">
+
+                <EditText
+                    android:id="@+id/especifica_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:inputType="time"
+                    android:maxLength="8"></EditText>
+            </android.support.design.widget.TextInputLayout>
 
         </RelativeLayout>
     </ScrollView>

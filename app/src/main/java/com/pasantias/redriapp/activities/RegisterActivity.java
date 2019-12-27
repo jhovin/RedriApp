@@ -26,6 +26,10 @@ public class RegisterActivity extends AppCompatActivity {
     private EditText maquinaInput;
     private EditText modeloInput;
     private EditText serieInput;
+    private EditText fechainicioInput;
+    private EditText fechafinInput;
+    private EditText horainicioInput;
+    private EditText horafinInput;
     private Button saveButton;
 
     @Override
@@ -41,6 +45,10 @@ public class RegisterActivity extends AppCompatActivity {
         tecnico2Input=findViewById(R.id.tecnico2_input);
         dnitec1Input=findViewById(R.id.dnitec1_input);
         dnitec2Input=findViewById(R.id.dnitec2_input);
+        fechainicioInput=findViewById(R.id.fech_inicio);
+        fechafinInput=findViewById(R.id.fech_fin);
+        horainicioInput=findViewById(R.id.horainicio_input);
+        horafinInput=findViewById(R.id.horafin_input);
         maquinaInput=findViewById(R.id.maquina_input);
         modeloInput=findViewById(R.id.modelo_input);
         serieInput=findViewById(R.id.serie_input);
@@ -57,18 +65,21 @@ public class RegisterActivity extends AppCompatActivity {
 
     private void save() {
 
-        String supervisor=supervisorInput.getText().toString();
-        String dnisupervisor =dni1Input.getText().toString();
+        String supervisor=supervisorInput.getText().toString().toUpperCase();
+        String dnisupervisor =dni1Input.getText().toString().toUpperCase();
         String ubicacion = ubicacionInput.getText().toString();
         String cod=codigoInput.getText().toString();
-        String tec1=tecnico1Input.getText().toString();
+        String tec1=tecnico1Input.getText().toString().toUpperCase();
         String tec2=tecnico2Input.getText().toString();
         String dni_tec1=dnitec1Input.getText().toString();
         String dni_tec2=dnitec2Input.getText().toString();
-        String maquina=maquinaInput.getText().toString();
+        String maquina=maquinaInput.getText().toString().toUpperCase();
         String modelo=modeloInput.getText().toString();
         String serie=serieInput.getText().toString();
-
+        String fechainicio=fechainicioInput.getText().toString();
+        String fechafin=fechafinInput.getText().toString();
+        String horainicio=horainicioInput.getText().toString();
+        String horafin=horafinInput.getText().toString();
 
         User user = new User();
         user.setSupervisor(supervisor);
@@ -82,6 +93,10 @@ public class RegisterActivity extends AppCompatActivity {
         user.setMaquina(maquina);
         user.setModelo(modelo);
         user.setSerie(serie);
+        user.setFechainicio(fechainicio);
+        user.setFechafin(fechafin);
+        user.setHorainicio(horainicio);
+        user.setHorafin(horafin);
 
 
         if (supervisor.isEmpty()||dnisupervisor.isEmpty()||ubicacion.isEmpty()||cod.isEmpty()||
@@ -109,6 +124,7 @@ public class RegisterActivity extends AppCompatActivity {
         Intent intent=new Intent(this,DuracionActivity.class);
         startActivity(intent);
         setResult(RESULT_OK);
+        finish();
 
     }
 }
