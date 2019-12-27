@@ -31,6 +31,7 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:background="@drawable/shape3"
+            android:layout_margin="5dp"
             android:layout_height="wrap_content">
 
 
@@ -424,10 +425,200 @@
                 </EditText>
             </android.support.design.widget.TextInputLayout>
 
+            //Hola
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_below="@+id/inputEspecifica2"
+                android:id="@+id/textTotalHoras"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_alignEnd="@+id/center_view">
+
+                <TextView
+                    android:id="@+id/totalHoras_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:text="TOTAL DE HORAS:"></TextView>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textPrograhoras3"
+                android:layout_below="@+id/textTotalHoras"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_alignEnd="@+id/center_view">
+
+                <TextView
+                    android:id="@+id/prograhoras3_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Horas Programadas de Mantemiento/Fabricación"
+                    android:textSize="15sp"></TextView>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inputPrograHoras3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_below="@+id/textPrograhoras3"
+                android:layout_alignEnd="@+id/center_view">
+
+                <EditText
+                    android:id="@+id/prograhoras3_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="time"
+                    android:maxLength="8"
+                    ></EditText>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textHorasReales3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_below="@+id/textTotalHoras"
+                android:layout_alignLeft="@+id/center_view">
+
+                <TextView
+                    android:id="@+id/horasreales3_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:text="Horas Reales de Mantenimiento/Fabricación"
+                    ></TextView>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inputHorasReales3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_below="@+id/textHorasReales3"
+                android:layout_alignLeft="@+id/center_view">
+
+                <EditText
+                    android:id="@+id/horasreales3_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="time"
+                    android:maxLength="8"
+                    ></EditText>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textDesmontaje3"
+                android:layout_below="@+id/inputPrograHoras3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_alignEnd="@+id/center_view">
+
+                <TextView
+                    android:id="@+id/desmontajetime3_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Técnico 2"
+                    android:text="Exceso de Tiempo en Desmontaje"></TextView>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inputDesmontaje3"
+                android:layout_below="@+id/textDesmontaje3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_alignEnd="@+id/center_view">
+
+                <EditText
+                    android:id="@+id/desmontajetime3_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="time"
+                    android:maxLength="8"
+                    ></EditText>
+
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textRepuesto3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_below="@+id/inputHorasReales3"
+                android:layout_alignLeft="@+id/center_view">
+
+                <TextView
+                    android:id="@+id/repuestotime3_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Tiempo de Espera de Repuesto "></TextView>
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inputRepuesto3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_below="@+id/textRepuesto3"
+                android:layout_alignLeft="@+id/center_view">
+
+                <EditText
+                    android:id="@+id/repuestotime3_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="time"
+                    android:maxLength="8"
+                    ></EditText>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_below="@+id/inputDesmontaje3"
+                android:id="@+id/textEspecifica3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_alignEnd="@+id/center_view">
+
+                <TextView
+                    android:id="@+id/especificastime3_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:text="Tiempo de Ordenes Específicas/Especiales"></TextView>
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inputEspecifica3"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/textEspecifica3"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content"
+                >
+
+                <EditText
+                    android:id="@+id/especificastime3_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="time"
+                    android:maxLength="8">
+                </EditText>
+            </android.support.design.widget.TextInputLayout>
+
+
             <View
                 android:id="@+id/v1"
                 android:layout_width="match_parent"
-                android:layout_below="@id/inputEspecifica2"
+                android:layout_below="@id/inputEspecifica3"
                 android:layout_height="20dp"></View>
 
             <Button

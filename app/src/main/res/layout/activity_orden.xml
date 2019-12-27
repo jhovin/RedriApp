@@ -9,7 +9,7 @@
         android:id="@+id/tvLista"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Lista de OT"
+        android:text="LISTA DE OT"
         android:gravity="center_horizontal"
         android:textSize="20sp"
         android:textStyle="bold">
@@ -30,5 +30,5 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
         android:src="@android:drawable/ic_menu_add"/>
-    
+
 </RelativeLayout>
