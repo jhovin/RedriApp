@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/remicsa"></ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Registro de Horas de Orden de Trabajo"
+            android:textSize="20sp"
+            android:textStyle="bold"></TextView>
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape3">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textOrdenespecificas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/center_view"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:id="@+id/ordenespecificas_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ORDENES ESPECIFICAS/ESPECIALES:"
+                    android:textSize="20sp"
+                    android:textStyle="bold">
+
+                </TextView>
+            </android.support.design.widget.TextInputLayout>
+
+            <View
+                android:id="@+id/center_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="1" />
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inputOrden1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textOrdenespecificas"
+                >
+
+                <EditText
+                    android:id="@+id/orden1_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:hint=""></EditText>
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textHorainicioespeci"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/inputOrden1"
+                android:layout_alignEnd="@+id/center_view"
+                >
+
+                <TextView
+                    android:id="@+id/horainicioespeci1_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="Hora Inicio"></TextView>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textHoraterminoespeci"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/inputOrden1"
+                android:layout_alignLeft="@+id/center_view"
+                >
+
+                <TextView
+                    android:id="@+id/horaterminoespeci1_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="Hora de Termino"></TextView>
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inputHorainicio1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textHorainicioespeci"
+                android:layout_alignEnd="@+id/center_view">
+
+                <EditText
+                    android:id="@+id/horainicio1_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="time"
+                    android:maxLength="8"></EditText>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inputHoratermino1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textHoraterminoespeci"
+                android:layout_alignLeft="@+id/center_view">
+
+                <EditText
+                    android:id="@+id/horatermino1_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="time"
+                    android:maxLength="8"></EditText>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inputOrden2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/inputHorainicio1"
+                >
+
+                <EditText
+                    android:id="@+id/orden2_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:hint=""></EditText>
+
+            </android.support.design.widget.TextInputLayout>
+
+
+
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>
