@@ -34,7 +34,7 @@
             android:layout_margin="5dp"
             android:layout_height="wrap_content">
 
-    //Mantenimiento
+
             <android.support.design.widget.TextInputLayout
                 android:id="@+id/textMantenimiento"
                 android:layout_width="match_parent"
@@ -238,7 +238,6 @@
                 </EditText>
             </android.support.design.widget.TextInputLayout>
 
-    //Fabricacion
             <android.support.design.widget.TextInputLayout
                 android:layout_below="@+id/inputEspecifica"
                 android:id="@+id/textFabricacion"
@@ -425,9 +424,6 @@
                     android:maxLength="8">
                 </EditText>
             </android.support.design.widget.TextInputLayout>
-
-            //Total de Horas
-
             <android.support.design.widget.TextInputLayout
                 android:layout_below="@+id/inputEspecifica2"
                 android:id="@+id/textTotalHoras"
