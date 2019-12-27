@@ -13,14 +13,14 @@
         <activity android:name=".activities.DuracionActivity">
 
         </activity>
-        <activity android:name=".activities.SplashActivity" />
-        <activity android:name=".activities.OrdenActivity">
+        <activity android:name=".activities.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
+        </activity>
+        <activity android:name=".activities.OrdenActivity">
         </activity>
         <activity android:name=".activities.RegisterActivity">
             <meta-data

@@ -8,14 +8,12 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-
         <ImageView
             android:id="@+id/iv"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:src="@drawable/remicsa">
         </ImageView>
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -24,8 +22,6 @@
             android:textStyle="bold"
             android:textSize="20sp">
         </TextView>
-
-
     </RelativeLayout>
 
     <ScrollView

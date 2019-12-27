@@ -32,7 +32,7 @@ public class SplashActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_splash);
 
-        final Intent i = new Intent(this,RegisterActivity.class);
+        final Intent i = new Intent(this,OrdenActivity.class);
         Thread time = new Thread(){
             public void run (){
                 try{

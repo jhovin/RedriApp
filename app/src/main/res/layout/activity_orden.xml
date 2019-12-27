@@ -5,8 +5,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activities.OrdenActivity">
+    <TextView
+        android:id="@+id/tvLista"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lista de OT"
+        android:gravity="center_horizontal"
+        android:textSize="20sp"
+        android:textStyle="bold">
+
+    </TextView>
 
     <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/tvLista"
         android:id="@+id/recyclerview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
@@ -19,6 +30,5 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
         android:src="@android:drawable/ic_menu_add"/>
-
-
+    
 </RelativeLayout>
