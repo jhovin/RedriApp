@@ -4,15 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="30dp"
     tools:context=".activities.OrdenActivity">
     <TextView
         android:id="@+id/tvLista"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="LISTA DE OT"
+        android:text="LISTA DE ORDENES DE TRABAJO MÁQUINAS DE SUPERFICIE"
         android:gravity="center_horizontal"
-        android:textSize="20sp"
-        android:textStyle="bold">
+        android:textSize="32sp"
+        android:textStyle="italic">
 
     </TextView>
 
@@ -28,6 +29,7 @@
         android:layout_margin="16dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
+        android:backgroundTint="#000000"
         android:src="@android:drawable/ic_menu_add"/>
 
 </RelativeLayout>

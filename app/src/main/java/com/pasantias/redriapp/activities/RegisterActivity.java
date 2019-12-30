@@ -120,7 +120,6 @@ public class RegisterActivity extends AppCompatActivity {
             UserRepository.save(user);
             Toast.makeText(this, "Usuario registrado con exito!", Toast.LENGTH_SHORT).show();
         }
-
         Intent intent=new Intent(this,DuracionActivity.class);
         startActivity(intent);
         setResult(RESULT_OK);

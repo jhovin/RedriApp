@@ -1,6 +1,7 @@
 package com.pasantias.redriapp.activities;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.support.annotation.Nullable;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
@@ -26,4 +27,21 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
     }
+
+    public void IrFormulario(View view) {
+        Intent intent = new Intent(MainActivity.this, OTLimaActivity.class);
+        startActivity(intent);
+    }
+
+    public void IrPagina(View view) {
+        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.redrilsa.com.pe/"));
+        startActivity(browserIntent);
+    }
+
+
+
+
+
+
+
 }

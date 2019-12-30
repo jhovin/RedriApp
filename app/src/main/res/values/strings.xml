@@ -1,3 +1,26 @@
 <resources>
     <string name="app_name">RedriApp</string>
+
+    <string-array name="list_maquinas">
+        <item>LF 70</item>
+        <item>LF 90</item>
+        <item>LF 230</item>
+        <item>CS 14</item>
+        <item>CS 140-1</item>
+        <item>MOROOKA MST-800</item>
+        <item>DH1-1</item>
+        <item>MC 12</item>
+    </string-array>
+
+    <string-array name="list_interiores">
+        <item>LM 75</item>
+        <item>LM 90</item>
+        <item>LM 110</item>
+        <item>RD 500</item>
+        <item>RD 500-M</item>
+        <item>RD 800-M</item>
+        <item>RD 800</item>
+        <item>RD 1000</item>
+        <item>DIAMEC</item>
+    </string-array>
 </resources>

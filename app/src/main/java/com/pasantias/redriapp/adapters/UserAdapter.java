@@ -86,7 +86,6 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder> {
             maquinaText=itemView.findViewById(R.id.maquina_text);
             modeloText=itemView.findViewById(R.id.modelo_text);
             serieText=itemView.findViewById(R.id.serie_text);
-
             button = (ImageButton) itemView.findViewById(R.id.delete_button);
         }
     }
