@@ -50,7 +50,6 @@ public class OrdenActivity extends AppCompatActivity {
     }
 
     private void callRegister() {
-
         startActivityForResult(new Intent(this, RegisterActivity.class), REGISTER_REQUEST_CODE);
     }
 
