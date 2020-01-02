@@ -45,6 +45,9 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder> {
         viewHolder.maquinaText.setText(user.getMaquina());
         viewHolder.modeloText.setText(user.getModelo());
         viewHolder.serieText.setText(user.getSerie());
+        viewHolder.fechauser.setText(user.getFechafin());
+        viewHolder.horauser.setText(user.getHorainicio());
+
         viewHolder.button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -73,6 +76,8 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder> {
         TextView maquinaText;
         TextView modeloText;
         TextView serieText;
+        TextView fechauser;
+        TextView horauser;
 
         ImageButton button;
 
@@ -86,6 +91,8 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder> {
             maquinaText=itemView.findViewById(R.id.maquina_text);
             modeloText=itemView.findViewById(R.id.modelo_text);
             serieText=itemView.findViewById(R.id.serie_text);
+            fechauser=itemView.findViewById(R.id.fecha_user);
+            horauser=itemView.findViewById(R.id.hora_user);
             button = (ImageButton) itemView.findViewById(R.id.delete_button);
         }
     }

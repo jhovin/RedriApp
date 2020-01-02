@@ -1,16 +1,21 @@
 package com.pasantias.redriapp.activities;
 
+import android.app.DatePickerDialog;
+import android.app.Dialog;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.Toast;
 
 import com.pasantias.redriapp.R;
 import com.pasantias.redriapp.models.User;
 import com.pasantias.redriapp.repositories.UserRepository;
+
+import java.util.Calendar;
 
 
 public class RegisterActivity extends AppCompatActivity {
@@ -31,6 +36,13 @@ public class RegisterActivity extends AppCompatActivity {
     private EditText horainicioInput;
     private EditText horafinInput;
     private Button saveButton;
+
+    //Calendario
+    private int mYearIni, mMonthIni, mDayIni, sYearIni, sMonthIni, sDayIni;
+    private int mYearIni1, mMonthIni1, mDayIni1, sYearIni1, sMonthIni1, sDayIni1;
+    static final int DATE_ID = 0;
+    static final int DATE_ID1 = 1;
+    Calendar C = Calendar.getInstance();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,7 +73,11 @@ public class RegisterActivity extends AppCompatActivity {
                 save();
             }
         });
+
+
     }
+
+
 
     private void save() {
 
@@ -101,7 +117,7 @@ public class RegisterActivity extends AppCompatActivity {
 
         if (supervisor.isEmpty()||dnisupervisor.isEmpty()||ubicacion.isEmpty()||cod.isEmpty()||
                 tec1.isEmpty()||dni_tec1.isEmpty()||maquina.isEmpty()||modelo.isEmpty()||serie.isEmpty()){
-            Toast.makeText(this, "Ingrese todos los campos!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "¡Ingrese todos los campos!", Toast.LENGTH_SHORT).show();
             return;
         }if (supervisor.isEmpty()){
             Toast.makeText(this,"El campo de Supervisor es necesario",Toast.LENGTH_SHORT).show();
@@ -126,6 +142,7 @@ public class RegisterActivity extends AppCompatActivity {
         finish();
 
     }
+
 }
 
 

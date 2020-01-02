@@ -28,11 +28,12 @@
 
     </RelativeLayout>
 
-    <ScrollView
+        <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <RelativeLayout
+            android:padding="20dp"
             android:layout_width="match_parent"
             android:background="@drawable/shape3"
             android:layout_height="wrap_content">
@@ -196,6 +197,7 @@
                 <EditText
                     android:id="@+id/fech_inicio"
                     android:layout_width="match_parent"
+                    android:ems="10"
                     android:layout_height="wrap_content"
                     android:inputType="date"
                     android:maxLength="10"

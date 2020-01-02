@@ -6,18 +6,23 @@
     android:layout_height="match_parent"
     android:padding="30dp"
     tools:context=".activities.OrdenActivity">
+
     <TextView
         android:id="@+id/tvLista"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textSize="32sp"
         android:text="LISTA DE ORDENES DE TRABAJO MÁQUINAS DE SUPERFICIE"
         android:gravity="center_horizontal"
-        android:textSize="32sp"
-        android:textStyle="italic">
+        android:background="@drawable/shape3"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        android:textStyle="italic|bold">
 
     </TextView>
 
     <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="20dp"
         android:layout_below="@+id/tvLista"
         android:id="@+id/recyclerview"
         android:layout_width="match_parent"
