@@ -35,7 +35,7 @@ public class IminaLimaActivity extends AppCompatActivity {
     public void IrseleccionarMina(View view) {
         String item=(String)spinnerIMina.getSelectedItem();
         Toast.makeText(this, "Usted ha Seleccionado: "+item, Toast.LENGTH_SHORT).show();
-        Intent intent=new Intent(IminaLimaActivity.this,OrdenActivity.class);
+        Intent intent=new Intent(IminaLimaActivity.this,OrdenIMActivity.class);
         startActivity(intent);
     }
 }

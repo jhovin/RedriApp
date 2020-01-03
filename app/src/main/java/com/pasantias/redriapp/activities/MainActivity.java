@@ -37,11 +37,8 @@ public class MainActivity extends AppCompatActivity {
         Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.redrilsa.com.pe/"));
         startActivity(browserIntent);
     }
+    public void IrProyectos(View view){
 
-
-
-
-
-
+    }
 
 }
